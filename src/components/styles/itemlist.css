@@ -1,0 +1,21 @@
+.list-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 600px){
+
+    .list-container{
+        display: flex;
+        flex-direction: column;
+        max-width: 272px;
+        margin: 0px auto 12px;
+    }
+
+}
+
+

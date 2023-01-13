@@ -2,12 +2,10 @@ import CartWidget from './CartWidget';
 import './styles/navbar.css';
 import brand from '../img/logo.svg';
 import { AiOutlineMenu } from 'react-icons/ai';
-import { AiOutlineCaretDown } from 'react-icons/ai';
 import { AiOutlineUser } from 'react-icons/ai';
 
 const NavBar = () => {
   return (
-
     <header>
         <nav>
 
@@ -16,7 +14,7 @@ const NavBar = () => {
             <AiOutlineMenu />
           </label>
 
-          <img src={brand} alt="brand"/>
+          <img className="brand" src={brand} alt="brand"/>
 
           <ul className="list">
               <div className="drop-down-menu">
@@ -26,7 +24,7 @@ const NavBar = () => {
                   <button className="drop-down-button">About</button>
               </div>
               <div className="drop-down-menu">
-                  <button className="drop-down-button">Brands <AiOutlineCaretDown /></button>
+                  <button className="drop-down-button">Brands</button>
                   <div className="drop-down-menu-content">
                       <a href="#">Nike</a>
                       <a href="#">Adidas</a>

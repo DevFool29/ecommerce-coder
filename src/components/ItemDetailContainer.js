@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react"
-import ItemList from "./ItemList"
+import { useState, useEffect } from "react";
 import z1 from '../img/z1.png'
 import z2 from '../img/z2.png'
 import z4 from '../img/z4.png'
@@ -44,28 +43,28 @@ const productsData= [
   },
 ]
 
-const ItemListContainer = () => {
+const ItemDetailContainer = () => {
 
-  const[products, setProducts] = useState([]);
+  const[product, setProduct] = useState({})
 
-  const getProducts = new Promise((resolve, reject) => {
+  const getProduct = new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve(productsData);
+      resolve(JSON.stringify(productsData));
     }, 2000)
   })
 
   useEffect(() => {
-    getProducts.then(response => {
+    getProduct.then(response => {
       console.log(response);
-      setProducts(response);
+      setProduct(response);
     }).catch(error => console.log(error))
   }, [])
-  
+
   return (
     <div>
-      <ItemList products={products}/>
+      
     </div>
   )
 }
 
-export default ItemListContainer
+export default ItemDetailContainer

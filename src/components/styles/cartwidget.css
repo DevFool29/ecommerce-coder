@@ -8,12 +8,13 @@
 }
 
 .counter{
-    width: 21px;
+    width: 22px;
     height: 18px;
     border-radius: 5px;
     background-color: red;
     margin-top: -6px;
     margin-left: -4px;
+    padding-right: 2px;
     text-align: center;
     font-size: 13px;
 }

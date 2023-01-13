@@ -1,0 +1,24 @@
+.container-counter{
+    display: flex;
+    width: 100px;
+    border: 1px black solid;
+    border-radius: 20px;
+    justify-content: space-around;
+}
+
+.symbol{
+    font-size: 16px;
+}
+
+.container-counter:hover{
+    border: 1px #E6E6E6 solid;
+}
+
+.container-counter button{
+    background-color: white;
+    cursor: pointer;
+}
+
+
+
+
