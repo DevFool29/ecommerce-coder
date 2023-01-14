@@ -1,69 +1,30 @@
-import { useState, useEffect } from "react"
-import ItemList from "./ItemList"
-import z1 from '../img/z1.png'
-import z2 from '../img/z2.png'
-import z4 from '../img/z4.png'
-import z5 from '../img/z5.png'
-import z8 from '../img/z8.png'
-
-const productsData= [
-  { id: 1,
-    title: 'Zapatillas Samba OG',
-    brand: 'ADIDAS',
-    description: 'ESTILO CLÁSICO E ICÓNICO PARA USO DIARIO',
-    price: 78,
-    pictureUrl: z1
-  },
-  { id: 2,
-    title: 'Zapatillas Forum 84 Home Alone 2',
-    brand: 'ADIDAS',
-    description: 'PREPÁRATE PARA REVOLUCIONARLO TODO',
-    price: 156.40,
-    pictureUrl: z2
-  },
-  { id: 4,
-    title: 'Nike Court Legacy Canvas',
-    brand: 'Nike',
-    description: 'Estas zapatillas urbanas Nike rinden tributo a la cultura del tenis.',
-    price: 52.19,
-    pictureUrl: z4
-  },
-  { id: 5,
-    title: 'Nike Court Borough Low 2',
-    brand: 'Nike',
-    description: 'Court Borough Low 2 son unas zapatillas urbanas de niño que combinan comodidad y el estilo.',
-    price: 109.63,
-    pictureUrl: z5
-  },
-  { id: 8,
-    title: 'Puma Zapatillas Hombre TRC',
-    brand: 'Puma',
-    description: 'La tecnología Trinomic causó furor en la década de 1990. La amortiguación, la flexibilidad y la estabilidad se convirtieron en funciones imprescindibles que se plasmaron en el icónico logotipo del triángulo. ',
-    price: 130,
-    pictureUrl: z8
-  },
-]
+import { useState, useEffect } from "react";
+import ItemList from "./ItemList";
+import { getProducts } from "../mock/FakeApi";
+import { useParams } from "react-router-dom";
 
 const ItemListContainer = () => {
 
   const[products, setProducts] = useState([]);
-
-  const getProducts = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve(productsData);
-    }, 2000)
-  })
+  const[filteredProducts, setFilteredProducts] = useState([]);
+  const { brand } = useParams();
 
   useEffect(() => {
     getProducts.then(response => {
       console.log(response);
       setProducts(response);
-    }).catch(error => console.log(error))
+    })
+    .catch(error => console.log(error))
   }, [])
+
+  useEffect(() =>{
+    const filterProduct = products.filter(product => product.brand === brand)
+    setFilteredProducts(filterProduct)
+  }, [brand])
   
   return (
-    <div>
-      <ItemList products={products}/>
+    <div className="total-list-container">
+      <ItemList products={brand ? filteredProducts : products}/>
     </div>
   )
 }

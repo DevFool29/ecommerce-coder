@@ -6,6 +6,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     margin-bottom: 20px;
+    position: fixed;
 }
 
 img{
@@ -21,15 +22,6 @@ img{
     padding: 15px 15px;
 }
 
-.drop-down-menu-content{
-    display: none;
-    position: absolute;
-    background-color: #ffdb15;
-    margin-left: 10px;
-    min-width: 60px;
-    z-index: 1;
-}
-
 .drop-down-button{
     background-color: #ffdb15;
     font-weight: 900;
@@ -40,21 +32,6 @@ img{
     text-shadow: 0 .25em 0.25em rgba(79, 76, 76, 0.65) !important;
 }
 
-.drop-down-menu-content a{
-    float: none;
-    display: block;
-    font-weight: 900;
-    padding: 10px 10px;
-}
-
-.drop-down-menu-content a:hover{
-    background-color: #ffdb15;
-    color: white;
-}
-
-.drop-down-menu:hover .drop-down-menu-content{
-    display: block;
-}
 
 nav ul{
     display: flex;
@@ -72,11 +49,21 @@ nav ul{
     display: none;
 }
 
+.active{
+    color: rgb(94, 60, 60);
+    font-size: 16px;
+    text-shadow: 0 .25em 0.25em rgba(79, 76, 76, 0.65) !important;
+}
+
+.inactive{
+    color: black;
+}
+
 /* Responsive */
 @media (max-width: 600px){
 
     .brand{
-        margin: 0 auto;
+        margin: 0 40px;
     }
 
     nav{
@@ -87,14 +74,6 @@ nav ul{
     .drawer{
         display: block;
         padding: 0 25px;
-    }
-
-    .drop-down-menu-content{
-        width: 60px;
-    }
-
-    ul{
-       
     }
 
     .list{
@@ -115,5 +94,14 @@ nav ul{
         left: 0;
     }
 
-   
+    .active{
+        color: rgb(94, 60, 60);
+        font-size: 16px;
+        text-shadow: 0 .25em 0.25em rgba(79, 76, 76, 0.65) !important;
+    }
+    
+    .inactive{
+        color: black;
+    }
+       
 }
