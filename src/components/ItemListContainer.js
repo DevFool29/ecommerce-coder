@@ -11,7 +11,7 @@ const ItemListContainer = () => {
 
   useEffect(() => {
     getProducts.then(response => {
-      console.log(response);
+      console.log({response});
       setProducts(response);
     })
     .catch(error => console.log(error))
@@ -20,7 +20,9 @@ const ItemListContainer = () => {
   useEffect(() =>{
     const filterProduct = products.filter(product => product.brand === brand)
     setFilteredProducts(filterProduct)
-  }, [brand])
+    console.log({filterProduct})
+    console.log({products})
+  }, [brand, products])
   
   return (
     <div className="total-list-container">
