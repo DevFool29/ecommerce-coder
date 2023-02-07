@@ -20,9 +20,8 @@ const ItemListContainer = () => {
   useEffect(() =>{
     const filterProduct = products.filter(product => product.brand === brand)
     setFilteredProducts(filterProduct)
-    console.log({filterProduct})
-    console.log({products})
-  }, [brand, products])
+    
+  }, [brand])
   
   return (
     <div className="total-list-container">
