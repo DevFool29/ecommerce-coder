@@ -1,0 +1,64 @@
+.verify{
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.create-order{
+    display: block;
+    cursor: pointer;
+    margin: 30px auto;
+    margin-bottom: 40px;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 14px;
+    background-color: green;
+    color: black;
+    font-weight: 900;           
+}
+
+.form{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    padding: 5px;
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 4px 3px #888888;
+}
+
+label{
+    display: block;
+    width: 40%;
+    text-align: left;
+    padding: 10px 0;
+}
+
+.validate-email{
+    display: block;
+    margin: 0 auto;
+}
+
+.error{
+    font-weight: 900;
+}
+
+.noError{
+    display: none;
+}
+
+@media (max-width: 600px){
+
+    input, label{
+        width: 75%;
+    }
+    
+
+}

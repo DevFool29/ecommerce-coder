@@ -1,16 +1,29 @@
-import { useState } from "react"
 import './styles/itemcount.css'
 
-const ItemCount = () => {
+const ItemCount = ({stockDetail, counter, setCounter, setMessageStock}) => {
 
-  const [counter, setCounter] = useState(0);
+  const sumar = () => {
+    if(stockDetail === counter){
+      setMessageStock(true)
+      return
+    }
+    setCounter(counter+1)
+  }
+
+  const restar = () => {
+    if(counter === 0){
+      return
+    }
+    setMessageStock(false)
+    setCounter(counter-1)
+  }
 
   return (
     <>
       <div className="container-counter">
-          <button className="symbol" onClick={() => setCounter(counter-1)}>-</button>
-          <span className="counter-item">{counter < 0 ? setCounter(0): `${counter}`}</span>
-          <button className="symbol" onClick={() => setCounter(counter+1)}>+</button>
+          <button className="symbol" onClick={restar}>-</button>
+          <span className="counter-item">{counter < 0 ? setCounter(0): counter}</span>
+          <button className="symbol" onClick={sumar}>+</button>
       </div>
     </>
   )

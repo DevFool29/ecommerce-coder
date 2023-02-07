@@ -10,35 +10,40 @@ export const productsData= [
       brand: 'adidas',
       description: 'Su confección súper duradera agrega una suela de goma que aporta tracción. Son la opción perfecta para tu fanático del calzado deportivo.',
       price: 78,
-      pictureUrl: z1
+      pictureUrl: z1,
+      stock: 5
     },
     { id: 2,
       title: 'Zapatillas Forum 84 Home Alone 2',
       brand: 'adidas',
       description: 'Zapatillas inspiradas en el icono de los aros de los 80 pero con colores brillantes y atrevidos. Incorpora una suela de goma para una óptima tracción ycuello acolchado de corte bajo para más confort.',
       price: 156,
-      pictureUrl: z2
+      pictureUrl: z2,
+      stock: 6
     },
     { id: 4,
       title: 'Nike Court Legacy Canvas',
       brand: 'nike',
       description: 'La combinación de varias texturas crea un diseño liviano yduradero que brinda a los pies jóvenes una sensación de comodidad. Además, su configuración de amortiguación flexible se combina con un cómodo cinturón de fijación, adecuado para deportes.',
       price: 52,
-      pictureUrl: z4
+      pictureUrl: z4,
+      stock: 3
     },
     { id: 5,
       title: 'Nike Court Borough Low 2',
       brand: 'nike',
       description: 'Zapatillas urbanas que llevarán su estilo urbano a otro nivel. Inspiradas en el mundo del básquet, cuentan con una superficie sintética y añaden unas perforaciones en la parte delantera para darle más ventilación a sus pies.',
       price: 103,
-      pictureUrl: z5
+      pictureUrl: z5,
+      stock: 3
     },
     { id: 8,
       title: 'Puma Zapatillas Hombre TRC',
       brand: 'puma',
       description: 'La tecnología Trinomic causó furor en la década de 1990. La amortiguación, la flexibilidad y la estabilidad se convirtieron en funciones imprescindibles que se plasmaron en el icónico logotipo del triángulo. ',
       price: 130,
-      pictureUrl: z8
+      pictureUrl: z8,
+      stock: 7
     },
   ]
 

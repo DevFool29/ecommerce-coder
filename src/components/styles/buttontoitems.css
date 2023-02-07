@@ -1,0 +1,14 @@
+.back-to-root{
+    display: block;
+    cursor: pointer;
+    margin: 30px auto;
+    margin-bottom: 40px;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 14px;
+    background-color: rgb(134, 188, 223);
+    color: black;
+    font-weight: 900;           
+}

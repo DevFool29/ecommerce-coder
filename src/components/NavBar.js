@@ -1,8 +1,7 @@
 import CartWidget from './CartWidget';
 import './styles/navbar.css';
-import brand from '../img/logo.svg';
+import brand from '../img-logo/logo.svg'
 import { AiOutlineMenu } from 'react-icons/ai';
-import { AiOutlineUser } from 'react-icons/ai';
 import { Link, NavLink } from 'react-router-dom';
 
 const NavBar = () => {
@@ -54,12 +53,11 @@ const NavBar = () => {
                     </NavLink>
                   </button>
               </div>
-              <div className="drop-down-menu">
-                  <button className="drop-down-button"><AiOutlineUser />Login</button>
-              </div>
-              <div className="drop-down-menu">
-                  <button className="drop-down-button"><CartWidget /></button>
-              </div>
+              <Link to='/cart'>
+                <div className="drop-down-menu">
+                    <button className="drop-down-button"><CartWidget /></button>
+                </div>
+              </Link>
           </ul>
 
         </nav>

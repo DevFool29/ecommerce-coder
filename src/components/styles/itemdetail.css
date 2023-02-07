@@ -35,6 +35,26 @@
     font-weight: 700;
 }
 
+.message-stock{
+    color: crimson;
+    font-weight: 700;
+}
+
+.goToCart{
+    display: block;
+    cursor: pointer;
+    margin: 30px auto 40px;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 14px;
+    background-color: rgb(200, 241, 194);
+    color: black;
+    font-weight: 900;
+    
+}
+
 /* Responsive */
 @media (max-width: 600px){
 
@@ -54,7 +74,5 @@
    }
 
 
-   
- 
 
 }

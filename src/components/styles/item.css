@@ -10,9 +10,9 @@ li{
     border-radius: 20px;
 }
 
-.price{
+.price, .stock{
     font-size: 18px;
-    margin: auto 0px;
+    margin-top: 10px;
 }
 
 .title{
@@ -21,12 +21,6 @@ li{
     margin-bottom: 7px;
     font-weight: 700;
     font-size: 16px;
-}
-
-.price-counter{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 7px;
 }
 
 .addToCart{
@@ -45,6 +39,11 @@ li{
     background-color: #FAF8F1;
     transition: .3s ease;
     border: 1px #E6E6E6 solid;
+}
+
+.price-stock{
+    display: flex;
+    justify-content: space-between;
 }
 
 @media (max-width: 600px){

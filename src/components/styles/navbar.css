@@ -63,7 +63,7 @@ nav ul{
 @media (max-width: 600px){
 
     .brand{
-        margin: 0 40px;
+        margin: 0 -110px;
     }
 
     nav{

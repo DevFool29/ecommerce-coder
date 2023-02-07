@@ -3,6 +3,7 @@ import './styles/itemlist.css';
 
 
 const ItemList = ({ products }) => {
+  console.log(products);
   return (
     <ul className="list-container">
       {products.map(product => (

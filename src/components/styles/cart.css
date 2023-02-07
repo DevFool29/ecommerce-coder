@@ -1,0 +1,146 @@
+.title-cart{
+    padding-top: 110px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.table-cart{
+    display: flex;
+    justify-content: space-around;
+}
+
+table{
+    table-layout: fixed;
+    width: 70%;
+    border-spacing: 20px;
+}
+
+thead th:nth-child(1) {
+    width: 25%;
+}
+  
+thead th:nth-child(2) {
+   width: 30%;
+}
+
+thead th:nth-child(3) {
+    width: 15%;
+}
+
+thead th:nth-child(4) {
+    width: 10%;
+}
+
+thead th:nth-child(5) {
+    width: 10%;
+}
+
+thead th:nth-child(6) {
+    width: 10%;
+}
+
+thead{
+    padding-bottom: 25px;
+}
+
+tbody td{
+    text-align: center;    
+}
+
+tbody tr{
+    padding-top: 100px;
+}
+
+.img-cart{
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 40px;
+}
+
+.clear-order{
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 14px;
+    background-color: red;
+    color: aliceblue;
+    font-weight: 900;    
+}
+
+.empty-cart{
+    padding: 110px 40px 0;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.close-circle{
+    cursor: pointer;
+}
+
+td.total{
+    display: block;
+    font-weight: 700;
+    width: 120px;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.total-text{
+    font-weight: 900;
+}
+
+@media (max-width: 600px){
+
+    table{
+        table-layout: fixed;
+        width: 100%;
+        border-spacing: 20px;
+        font-size: 14px;
+    }
+
+    thead th:nth-child(1) {
+        width: 33.3%;
+    }
+      
+    thead th:nth-child(2), tbody td:nth-child(2) {
+       display: none;
+    }
+    
+    thead th:nth-child(3), tbody td:nth-child(3) {
+        display: none;
+    }
+    
+    thead th:nth-child(4) {
+        width: 33.3%;
+        margin: 20px;
+        text-align: right;
+    }
+    
+    thead th:nth-child(5) {
+        width: 33.3%;
+    }
+    
+    .img-cart{
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        border-radius: 40px;
+        margin-left: -15px;
+    }
+
+    .total{
+        font-weight: 900;
+        margin-left: -40px;
+    }
+    
+
+}
