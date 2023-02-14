@@ -21,6 +21,6 @@ What I used in this project:
 
 ## Usability
 
-_The video below show how to navigate in the app._
+_The video below shows how to navigate in the app._
 
 https://user-images.githubusercontent.com/111335142/217168826-644f523d-f3e5-462b-b374-4b7e6cc5334f.mp4
